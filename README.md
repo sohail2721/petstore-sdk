@@ -20,19 +20,19 @@ Find out more about Swagger: [https://swagger.io](https://swagger.io)
 Run the following command to install the package and automatically add the dependency to your composer.json file:
 
 ```bash
-composer require "apimatic/petstore-sdk:1.0.1"
+composer require "apimatic/petstore-sdk:1.0.4"
 ```
 
 Or add it to the composer.json file manually as given below:
 
 ```json
 "require": {
-    "apimatic/petstore-sdk": "1.0.1"
+    "apimatic/petstore-sdk": "1.0.4"
 }
 ```
 
 You can also view the package at:
-https://packagist.org/packages/apimatic/petstore-sdk#1.0.1
+https://packagist.org/packages/apimatic/petstore-sdk#1.0.4
 
 ## Test the SDK
 
@@ -45,7 +45,7 @@ You can change the PHPUnit test configuration in the `phpunit.xml` file.
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -61,9 +61,9 @@ The following parameters are configurable for the API Client:
 | retryOnTimeout | `bool` | Whether to retry on request timeout.<br>*Default*: `true` |
 | httpStatusCodesToRetry | `array` | Http status codes to retry against.<br>*Default*: `408, 413, 429, 500, 502, 503, 504, 521, 522, 524` |
 | httpMethodsToRetry | `array` | Http methods to retry against.<br>*Default*: `'GET', 'PUT'` |
-| proxyConfiguration | [`ProxyConfigurationBuilder`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/proxy-configuration-builder.md) | Represents the proxy configurations for API calls |
-| petstoreAuthCredentials | [`PetstoreAuthCredentials`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/auth/oauth-2-implicit-grant.md) | The Credentials Setter for OAuth 2 Implicit Grant |
-| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
+| proxyConfiguration | [`ProxyConfigurationBuilder`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/proxy-configuration-builder.md) | Represents the proxy configurations for API calls |
+| petstoreAuthCredentials | [`PetstoreAuthCredentials`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/auth/oauth-2-implicit-grant.md) | The Credentials Setter for OAuth 2 Implicit Grant |
+| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
 
 The API client can be initialized as follows:
 
@@ -100,28 +100,28 @@ $client = SwaggerPetstoreOpenAPI30ClientBuilder::init()
 
 This API uses the following authentication schemes.
 
-* [`petstore_auth (OAuth 2 Implicit Grant)`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/auth/oauth-2-implicit-grant.md)
-* [`api_key (Custom Header Signature)`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/auth/custom-header-signature.md)
+* [`petstore_auth (OAuth 2 Implicit Grant)`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/auth/oauth-2-implicit-grant.md)
+* [`api_key (Custom Header Signature)`](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/auth/custom-header-signature.md)
 
 ## List of APIs
 
-* [Pet](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/controllers/pet.md)
-* [Store](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/controllers/store.md)
-* [User](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/controllers/user.md)
+* [Pet](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/controllers/pet.md)
+* [Store](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/controllers/store.md)
+* [User](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/controllers/user.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [ProxyConfigurationBuilder](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/proxy-configuration-builder.md)
+* [ProxyConfigurationBuilder](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/proxy-configuration-builder.md)
 
 ### HTTP
 
-* [HttpRequest](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/http-request.md)
-* [HttpResponse](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/http-response.md)
+* [HttpRequest](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/http-request.md)
+* [HttpResponse](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/http-response.md)
 
 ### Utilities
 
-* [FileWrapper](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/file-wrapper.md)
-* [ApiException](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.1/doc/api-exception.md)
+* [FileWrapper](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/file-wrapper.md)
+* [ApiException](https://www.github.com/sohail2721/petstore-sdk/tree/1.0.4/doc/api-exception.md)
 
